@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <title>Lipa TSH 5,000</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://via.placeholder.com/800x600') no-repeat center center;
+      background-size: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      position: relative;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h2 {
+      color: #1aa36f;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .amount-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #1aa36f;
+    }
+
+    .logos {
+      display: flex;
+      gap: 5px; /* space kati ya logos */
+    }
+
+    .logos img {
+      height: 20px;  /* ndogo ndogo */
+      width: auto;
+      border-radius: 4px; /* optional rounded corners */
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #1aa36f;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #178b5f;
+    }
+
+    .small {
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+  <div class="card">
+    <h2>Lipa TSH 5,000/= Kuendelea</h2>
+    <p>Ujiunge Na Group la connection zote Group la malaya wote TZ Connection zote zipo</p>
+    <input type="text" placeholder="Jaza namba ya simu">
+    <div class="amount-box">
+      <span>Tsh 5,000</span>
+      <div class="logos">
+        <!-- Badilisha src na path ya logos zako halisi -->
+        <img src="images/tigopesa.png" alt="TigoPesa">
+        <img src="images/vodacom.png" alt="Vodacom">
+        <img src="images/airtel.png" alt="Airtel">
+        <img src="images/halopesa.png" alt="HaloPesa">
+      </div>
+    </div>
+    <button onclick="window.location.href='https://payments.pesapal.com/v3/invoice/YOUR_PAYLINK_HERE'">LIPIA SASA</button>
+    <div class="small">Secure Payment • SSL Encrypted</div>
+  </div>
+</div>
+
+</body>
+</html>
